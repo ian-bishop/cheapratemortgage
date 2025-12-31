@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="bg-[var(--color-ink)] text-[var(--color-paper)]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
             <a
@@ -68,6 +68,65 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Legal */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-paper)]/50 mb-4">
+              Legal
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/privacy"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://unitedinternetventures.com/#contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/terms"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/disclaimer"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  Disclaimer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sitemap-page"
+                  className="text-sm text-[var(--color-paper)]/70 hover:text-[var(--color-paper)] transition-colors"
+                >
+                  Site Map
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Data Source */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-paper)]/50 mb-4">
@@ -93,15 +152,18 @@ export function Footer() {
         <div className="h-px bg-[var(--color-paper)]/10 mb-8" />
 
         {/* Disclaimer & Copyright */}
-        <div className="flex flex-col sm:flex-row justify-between gap-4 text-xs text-[var(--color-paper)]/50">
-          <p className="max-w-2xl">
-            Rates shown are weekly national averages and are not offers to lend.
-            Actual rates may vary based on credit score, loan amount, property
-            type, and other factors. This site is for informational purposes
-            only.
+        <div className="flex flex-col gap-4 text-xs text-[var(--color-paper)]/50">
+          <p className="max-w-4xl">
+            <strong className="text-[var(--color-paper)]/70">Important:</strong>{' '}
+            CheapRateMortgage.com is not a mortgage broker, lender, or financial institution.
+            We do not offer mortgages or provide financial advice. Rates shown are weekly national
+            averages from Freddie Mac and are not offers to lend. Actual rates vary based on credit
+            score, loan amount, property type, and other factors. This site is for informational
+            purposes only. Always consult with licensed mortgage professionals before making
+            financial decisions.
           </p>
           <p className="whitespace-nowrap">
-            &copy; {new Date().getFullYear()} Cheap Rate Mortgage
+            &copy; {new Date().getFullYear()} United Internet Ventures
           </p>
         </div>
       </div>
