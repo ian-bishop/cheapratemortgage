@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, Source_Sans_3 } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+
+const GA_MEASUREMENT_ID = 'G-M59BG3148E';
 
 const dmSerif = DM_Serif_Display({
   weight: '400',
@@ -61,6 +64,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSerif.variable} ${sourceSans.variable}`}>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+      </head>
       <body className="antialiased">
         <div className="min-h-screen flex flex-col">
           <Header />
