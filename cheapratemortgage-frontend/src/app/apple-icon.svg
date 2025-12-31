@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#1a1f2e"/>
+
+  <!-- House outline -->
+  <path d="M90 30L30 75v75h50v-45h20v45h50V75L90 30z" fill="#c9a227"/>
+
+  <!-- Trend line -->
+  <path d="M50 95l30-15 30 8 30-23" stroke="#1a1f2e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a1f2e"/>
+
+  <!-- House outline -->
+  <path d="M16 6L6 14v12h8v-7h4v7h8V14L16 6z" fill="#c9a227"/>
+
+  <!-- Trend line (downward = good for rates) -->
+  <path d="M10 17l4-2 4 1 4-3" stroke="#1a1f2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arrow pointing down -->
+  <path d="M22 13l-1.5 2.5L22 13l1.5 2.5" stroke="#1a1f2e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
