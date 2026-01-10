@@ -17,6 +17,15 @@ npm run start    # Production server (binds to 0.0.0.0)
 npm run lint     # ESLint checks
 ```
 
+## Git Workflow
+
+Never commit directly to main. Always use feature branches:
+1. `git checkout main && git pull origin main`
+2. `git checkout -b feature/your-feature-name`
+3. Make changes and commit
+4. Push and create PR: `git push -u origin feature/your-feature-name`
+5. Merge via GitHub PR
+
 ## Pre-Commit Checklist
 
 Before commits:
