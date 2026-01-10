@@ -6,6 +6,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 const GA_MEASUREMENT_ID = 'G-M59BG3148E';
+const ADSENSE_CLIENT_ID = 'ca-pub-9576634561657687';
 
 const dmSerif = DM_Serif_Display({
   weight: '400',
@@ -77,6 +78,11 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
+        <Script
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="antialiased">
         <div className="min-h-screen flex flex-col">
